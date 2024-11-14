@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:7500}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka
